@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <router-view v-slot="{ Component, route }">
-      <!-- 使用任何自定义过渡和回退到 `fade` -->
-      <transition :name="route.meta.transition || 'fade'">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <transition :name="transitionName">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      transitionName: "slide-left",
+    };
+  },
 
+  watch: {
+    $route(to, from) {
+      const toDepth = to.meta.depth;
+      const fromDepth = from.meta.depth;
+      this.transitionName = toDepth < fromDepth ? "slide-right" : "slide-left";
+    },
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Proxima Nova, Avenir, Helvetica, Arial, sans-serif;
@@ -16,6 +29,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #f2f2f2;
 }
 
 nav {
@@ -29,5 +43,35 @@ nav {
       color: #42b983;
     }
   }
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+  position: absolute; // 需要注意的地方
+  width: 100%; // 需要注意的地方，否则会出现页面渲染卡顿现象
+  will-change: transform;
+  transition: all 0.3s ease-out;
+}
+
+.slide-right-enter {
+  
+  transform: translate(-100%, 0);
+}
+
+.slide-right-leave-active {
+  
+  transform: translate(0%, 0);
+}
+
+.slide-left-enter {
+  
+  transform: translate(100%, 0);
+}
+
+.slide-left-leave-active {
+  
+  transform: translate(0%, 0);
 }
 </style>

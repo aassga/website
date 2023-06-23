@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import memuView from '../views/menu/memuView.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
+
+  },
+  {
+    path: '/memuView',
+    name: 'memuView',
+    component: memuView,
     meta: { transition: 'slide-right' },
   },
   {
