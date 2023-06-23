@@ -119,6 +119,17 @@
           </div>
         </div>
       </div>
+      <div class="home-content__title pt16">
+        <span>OUR BRAND EXPERIENCE</span>
+        <img src="./../assets/images/Group78.png" alt="" />
+      </div>
+      <div class="home-content__center">
+        <div class="home-content__center--caption flex-direction align-items">
+          <div>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
+          </div>
+          <img class="mt2" src="./../assets/images/DigiSalad.png" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -185,6 +196,18 @@ export default {
 }
 .mb1{
   margin-bottom: 1rem;
+}
+.mt2{
+  margin-top: 2rem;
+}
+.pt16{
+  padding-top: 16rem;
+}
+.flex-direction{
+  flex-direction: column;
+}
+.align-items{
+  align-items: center;
 }
 .home {
   width: 100%;
@@ -455,10 +478,11 @@ export default {
         &__right{
           div{
             &:nth-child(2){
-              width: 28rem;
+              width: 33rem;
               text-align: left;
-              line-height: 1.5rem;
+              line-height: 2rem;
               color: #FFF;
+              letter-spacing: 2px;
             }
           }
         }
@@ -517,6 +541,7 @@ export default {
       padding: 1.3rem 3rem;
       border-radius: 40px;
       margin-top: 2rem;
+      cursor: pointer;
     }
   }
 }
