@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import memuView from '../views/menu/memuView.vue'
+import menuView from '../views/menu/menuView.vue'
 
 Vue.use(VueRouter)
 
@@ -13,9 +13,9 @@ const routes = [
 
   },
   {
-    path: '/memuView',
-    name: 'memuView',
-    component: memuView,
+    path: '/menuView',
+    name: 'menuView',
+    component: menuView,
     meta: { transition: 'slide-right' },
   },
   {

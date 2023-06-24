@@ -4,7 +4,7 @@
       <div class="home-top__button">
         <div><el-button class="rectangle">START YOUR PROJECT</el-button></div>
         <div>
-          <router-link to="/memuView"
+          <router-link to="/menuView"
             ><img src="./../assets/images/icon/Menu.png" alt=""
           /></router-link>
         </div>
@@ -62,12 +62,18 @@
             <div class="title">AWARDS</div>
             <img src="./../assets/images/Group61.png" alt="" />
             <div class="content">
-              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. 
+              Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
+              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
+              porta. Nam condimentum vitae ligula vel ornare. Phasellus at
+              semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl,
+              vitae sagittis orci. Donec id dignissim nunc.
             </div>
           </div>
           <div class="rigth-bg__right">
             <ul>
-              <li v-for="index in 4" :key="index"><img src="./../assets/images/image1.png" alt="" /></li>
+              <li v-for="index in 4" :key="index">
+                <img src="./../assets/images/image1.png" alt="" />
+              </li>
             </ul>
           </div>
         </div>
@@ -79,7 +85,15 @@
         </div>
         <div class="content">
           <div>
-            Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
+            Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
+            ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
+            porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper
+            turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae
+            sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a
+            dolor et, venenatis facilisis dolor. In feugiat orci odio, sed
+            lacinia sem elementum quis. Aliquam consectetur, eros et vulputate
+            euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus.
+            Cras lobortis molestie faucibus.
           </div>
         </div>
         <div class="home-content__center--buttom">
@@ -90,12 +104,16 @@
         </div>
         <div class="buttom-box">
           <ul>
-            <li class="buttom-box__li" v-for="(item,index) in menuData" :key="index">
+            <li
+              class="buttom-box__li"
+              v-for="(item, index) in menuData"
+              :key="index"
+            >
               <div class="buttom-box__ball">
-                <img :src="item.img" alt="">
+                <img :src="item.img" alt="" />
               </div>
               <div class="buttom-box__title">{{ item.title }}</div>
-              <div class="buttom-box__content">{{ item.content}}</div>
+              <div class="buttom-box__content">{{ item.content }}</div>
               <div class="buttom-box__buttom">VIEW MORE</div>
             </li>
           </ul>
@@ -114,8 +132,16 @@
             </div>
           </div>
           <div class="left-bg__right">
-            <div><img src="./../assets/images/icon/left-quote.png" alt=""></div>
-            <div>A great digital work isn’t about designing beautiful pages purely. It is about context - how do we deliver the right experience to the right person at the right time. The most important thing is that your work can engage customers at anytime, anywhere and let users experience an entire amazing digital journey.</div>
+            <div>
+              <img src="./../assets/images/icon/left-quote.png" alt="" />
+            </div>
+            <div>
+              A great digital work isn’t about designing beautiful pages purely.
+              It is about context - how do we deliver the right experience to
+              the right person at the right time. The most important thing is
+              that your work can engage customers at anytime, anywhere and let
+              users experience an entire amazing digital journey.
+            </div>
           </div>
         </div>
       </div>
@@ -125,88 +151,213 @@
       </div>
       <div class="home-content__center">
         <div class="home-content__center--caption flex-direction align-items">
-          <div>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.
+          <div>
+            Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
+            ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
+            porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper
+            turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae
+            sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a
+            dolor et, venenatis facilisis dolor. In feugiat orci odio, sed
+            lacinia sem elementum quis. Aliquam consectetur, eros et vulputate
+            euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus.
+            Cras lobortis molestie faucibus.
           </div>
-          <img class="mt2" src="./../assets/images/DigiSalad.png" alt="">
+          <img class="mt2" src="./../assets/images/DigiSalad.png" alt="" />
         </div>
       </div>
+    </div>
+    <div class="swiper">
+      <swiper :options="swiperOption">
+        <swiper-slide>
+          <div class="swiper-box">
+            <div class="swiper-num">
+              <div class="swiper-num__now">01</div>
+              <div class="swiper-num__fan"></div>
+              <div class="swiper-num__totle">04</div>
+            </div>
+            <div class="swiper-box__left">
+              <img src="./../assets/images/swiper-img.png" alt="" />
+            </div>
+            <div class="swiper-box__right">
+              <div>HIGHLIGHTED SHOWCASE</div>
+              <div>LP CLUB MOBILE APP</div>
+              <div>
+                Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
+                ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
+                porta. Nam condimentum vitae ligula vel ornare. Phasellus at
+                semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl,
+                vitae sagittis orci. Donec id dignissim nunc. Donec elit ante,
+                eleifend a dolor et, venenatis facilisis dolor. In feugiat orci
+                odio, sed lacinia sem elementum quis. Aliquam consectetur, eros
+                et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque
+                eros nec lacus. Cras lobortis molestie faucibus.
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
     </div>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
+
 export default {
   name: "HomeView",
+  // 添加组件
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
   data() {
     return {
-      menuData:[
+      menuData: [
         {
-          img:require("./../assets/images/menu/Frame-1.png"),
-          title:"UX Design",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-1.png"),
+          title: "UX Design",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-2.png"),
-          title:"UI Design",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-2.png"),
+          title: "UI Design",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-3.png"),
-          title:"website development",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-3.png"),
+          title: "website development",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-4.png"),
-          title:"mobile app development",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-4.png"),
+          title: "mobile app development",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-5.png"),
-          title:"ecommerce",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-5.png"),
+          title: "ecommerce",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-6.png"),
-          title:"customer loyalty",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-6.png"),
+          title: "customer loyalty",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-7.png"),
-          title:"digital transformation",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-7.png"),
+          title: "digital transformation",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-8.png"),
-          title:"digital marketing",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-8.png"),
+          title: "digital marketing",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          img:require("./../assets/images/menu/Frame-9.png"),
-          title:"BRANDING",
-          content:"Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
+          img: require("./../assets/images/menu/Frame-9.png"),
+          title: "BRANDING",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare.",
         },
-      ]
-    }
+      ],
+      swiperOption: {
+        navigation: {
+          prevEl: ".swiper-button-prev", //左侧按钮
+          nextEl: ".swiper-button-next", //右侧按钮
+        },
+        spaceBetween: 1,
+        slidesPerView: 1, // 一屏显示的slide个数
+        centeredSlides: true, // 居中的slide是否标记为active，默认是最左active,这样样式即可生效
+        slideToClickedSlide: true, // 点击的slide会居中
+        // loop: true,// 循环播放, 可有无限滚动效果，初始加载即是滚动后的效果
+        on: {
+          // 该方法中的this都指代swiper本身
+          tap: function () {
+            console.log("点击的位置", this.activeIndex);
+          },
+        },
+      },
+    };
   },
 };
 </script>
 <style lang="scss" scoped>
-.white{
-  color:#FFFFFF
+.swiper {
+  width: 100%;
+  height: 40rem;
+  background-image: url("./../assets/images/LP_fb.png");
+  background-size: cover;
+  background-position: 0px -36px;
+  border-radius: 0 0 30px 30px;
+  &-container {
+    width: 100%;
+    height: 100%;
+  }
+  &-slide {
+    text-align: center;
+    font-size: 18px;
+  }
+  &-button{
+    &-prev{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #26c4ce;
+      left: 55px;
+      cursor: pointer;
+      &::after{
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+    &-next{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #26c4ce;
+      right: 55px;
+      cursor: pointer;
+      &::after{
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+  }
 }
-.mb1{
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.white {
+  color: #ffffff;
+}
+.mb1 {
   margin-bottom: 1rem;
 }
-.mt2{
+.mt2 {
   margin-top: 2rem;
 }
-.pt16{
+.pt16 {
   padding-top: 16rem;
 }
-.flex-direction{
+.flex-direction {
   flex-direction: column;
 }
-.align-items{
+.align-items {
   align-items: center;
 }
 .home {
@@ -293,7 +444,6 @@ export default {
     position: absolute;
     bottom: 80px;
     img {
-      
       cursor: pointer;
     }
     &__border {
@@ -342,7 +492,7 @@ export default {
         .buttom {
           width: 14rem;
           height: 70px;
-          color: #FFFFFF;
+          color: #ffffff;
           font-weight: 600;
           background-color: #26c6d0;
           display: flex;
@@ -356,95 +506,92 @@ export default {
         }
       }
     }
-    &__rigth{
+    &__rigth {
       width: 100%;
       margin-top: 5rem;
       display: flex;
-      justify-content: flex-end; 
-      position: absolute; 
-      .rigth-bg{
-        width: 105rem;
+      justify-content: flex-end;
+      position: absolute;
+      .rigth-bg {
+        width: 88%;
         height: auto;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         padding: 4rem;
         border-radius: 30px 0px 30px 30px;
         display: flex;
         align-items: center;
-        &__left{
+        &__left {
           width: 23rem;
           padding-right: 12rem;
           margin-left: 12rem;
-          .title{
+          .title {
             font-size: 28px;
             font-weight: 600;
           }
-          img{
+          img {
             width: 10rem;
           }
-          .content{
+          .content {
             text-align: left;
             line-height: 1.5rem;
             margin-top: 2rem;
           }
         }
-        &__right{
+        &__right {
           width: 46rem;
-          ul{
+          ul {
             display: flex;
             flex-wrap: wrap;
-            li{
+            li {
               margin-right: 20px;
               margin-bottom: 20px;
             }
           }
         }
-
       }
-      
     }
-    &__buttom{
+    &__buttom {
       width: 100%;
-      background-color: #26C6D0;
+      background-color: #26c6d0;
       border-radius: 30px;
       margin-top: 15rem;
-      .title{
+      .title {
         padding-top: 20rem;
         font-size: 34px;
         font-weight: 600;
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #FFFFFF;
+        color: #ffffff;
       }
-      .content{
+      .content {
         display: flex;
         justify-content: center;
         margin: 45px 0;
-        div{
+        div {
           width: 56rem;
           line-height: 1.5rem;
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
-      .home-content__center--buttom{
+      .home-content__center--buttom {
         width: 100%;
         display: flex;
         justify-content: center;
         cursor: pointer;
         .buttom {
           background-color: #585880;
-
         }
       }
     }
-    &__left{
+    &__left {
       width: 100%;
       margin-top: -15rem;
       display: flex;
       justify-content: flex-start;
       position: absolute;
-      .left-bg{
-        width: 105rem;
+      .left-bg {
+        width: 88%;
         height: auto;
         background-image: url("./../assets/images/bg/shutterstock.png");
         background-size: cover;
@@ -452,36 +599,36 @@ export default {
         border-radius: 0px 30px 30px 30px;
         display: flex;
         align-items: center;
-        &__left{
+        &__left {
           width: 23rem;
           padding-right: 12rem;
           margin-left: 12rem;
-          img{
+          img {
             width: 10rem;
             border-radius: 50%;
           }
-          .content{
+          .content {
             line-height: 1.5rem;
             margin-top: 2rem;
-            color: #FFF;
-            div{
-              &:nth-child(1){
+            color: #fff;
+            div {
+              &:nth-child(1) {
                 text-transform: uppercase;
                 font-weight: 600;
               }
-              &:nth-child(2){
-                font-style:oblique;
+              &:nth-child(2) {
+                font-style: oblique;
               }
             }
           }
         }
-        &__right{
-          div{
-            &:nth-child(2){
+        &__right {
+          div {
+            &:nth-child(2) {
               width: 33rem;
               text-align: left;
               line-height: 2rem;
-              color: #FFF;
+              color: #fff;
               letter-spacing: 2px;
             }
           }
@@ -490,37 +637,37 @@ export default {
     }
   }
 }
-.buttom{
-  &-box{
+.buttom {
+  &-box {
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
-    ul{
+    ul {
       display: flex;
       width: 75rem;
       flex-wrap: wrap;
     }
-    &__li{
+    &__li {
       display: flex;
       flex-direction: column;
       width: 15rem;
       align-items: center;
-      padding:5rem;
-      color: #FFFFFF;
+      padding: 5rem;
+      color: #ffffff;
     }
-    &__ball{
+    &__ball {
       width: 5rem;
       height: 5rem;
       border-radius: 50%;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      img{
+      img {
         width: 2rem;
       }
     }
-    &__title{
+    &__title {
       height: 75px;
       line-height: 25px;
       font-size: 20px;
@@ -531,13 +678,13 @@ export default {
       font-weight: 600;
       justify-content: center;
     }
-    &__content{
+    &__content {
       font-size: 16px;
       width: 19rem;
       line-height: 1.3rem;
     }
-    &__buttom{
-      border: 1px solid #FFFFFF;
+    &__buttom {
+      border: 1px solid #ffffff;
       padding: 1.3rem 3rem;
       border-radius: 40px;
       margin-top: 2rem;
@@ -545,28 +692,100 @@ export default {
     }
   }
 }
-.content{
-  &-title{
+.content {
+  &-title {
     font-size: 18px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 600;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20rem;
-    div{
-      &:nth-child(1){
+    div {
+      &:nth-child(1) {
         z-index: 9;
       }
     }
-    &::after{
+    &::after {
       content: "";
       display: block;
       width: 22rem;
       height: 0.3rem;
-      background-color: #FFBC58;
+      background-color: #ffbc58;
       position: absolute;
       margin-top: 10px;
+    }
+  }
+}
+.swiper {
+  &-num{
+    color: #FFF;
+    width: 4rem;
+    position: absolute;
+    right: 8rem;
+    top: 5rem;
+    &__now{
+      text-align: left;
+    }
+    &__fan{
+      width: 4rem;
+      height: 0.1rem;
+      background: #26C6D0;
+      transform: rotate(148deg);
+    }
+    &__totle{
+      text-align: right;
+    }
+  }
+  &-box {
+    height: 100%;
+    display: flex;
+    &__left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      img {
+        height: 25rem;
+        position: relative;
+        left: 15rem;
+      }
+    }
+    &__right {
+      color: #ffffff;
+      width: 32%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      line-height: 1.5rem;
+
+      div {
+        &:nth-child(1) {
+          font-size: 16px;
+        }
+        &:nth-child(2) {
+          z-index: 9;
+            font-size: 32px;
+            height: 5rem;
+            line-height: 5rem;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 20.5rem;
+            height: 0.3rem;
+            background-color: #26C6D0;
+            position: absolute;
+            margin-top: -33px;
+            z-index: -1;
+          }
+        }
+        &:nth-child(3) {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
