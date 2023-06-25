@@ -30,32 +30,7 @@
       </div>
     </div>
     <div class="home-content">
-      <div class="home-content__title">
-        <span>ABOUT DIGISALAD</span>
-        <img src="./../assets/images/Group61.png" alt="" />
-      </div>
-      <div class="home-content__center">
-        <img src="./../assets/images/Group60.png" alt="" />
-        <div class="home-content__center--caption">
-          <div>
-            Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-            ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-            porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper
-            turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae
-            sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a
-            dolor et, venenatis facilisis dolor. In feugiat orci odio, sed
-            lacinia sem elementum quis. Aliquam consectetur, eros et vulputate
-            euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus.
-            Cras lobortis molestie faucibus.
-          </div>
-        </div>
-        <div class="home-content__center--buttom">
-          <div class="buttom">
-            <div>VIEW MORE</div>
-            <div class="border"></div>
-          </div>
-        </div>
-      </div>
+      <aboutPage/>
       <div class="home-content__rigth">
         <div class="rigth-bg">
           <div class="rigth-bg__left">
@@ -203,6 +178,7 @@
 </template>
 
 <script>
+import aboutPage from "../components/aboutPage.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
@@ -212,6 +188,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    aboutPage
   },
   data() {
     return {
@@ -470,42 +447,7 @@ export default {
       flex-direction: column;
       align-items: center;
     }
-    &__center {
-      margin-top: 5rem;
-      width: 100%;
 
-      &--caption {
-        display: flex;
-        justify-content: center;
-
-        margin: 45px 0;
-        div {
-          width: 56rem;
-          line-height: 1.5rem;
-        }
-      }
-      &--buttom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        .buttom {
-          width: 14rem;
-          height: 70px;
-          color: #ffffff;
-          font-weight: 600;
-          background-color: #26c6d0;
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-        }
-        .border {
-          width: 3rem;
-          height: 0.1rem;
-          background-color: #ffffff;
-        }
-      }
-    }
     &__rigth {
       width: 100%;
       margin-top: 5rem;
