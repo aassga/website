@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div id="about">
     <div class="about-content__title">
       <span>ABOUT DIGISALAD</span>
       <img src="./../assets/images/Group61.png" alt="" />
     </div>
     <div class="about-content__center">
-      <img src="./../assets/images/Group60.png" alt="" />
+      <a href="https://www.youtube.com/watch?v=IeIRJ9jZ5Ro" target="_blank"><img src="./../assets/images/Group60.png" alt="" /></a>
       <div class="about-content__center--caption">
         <div>
           Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras

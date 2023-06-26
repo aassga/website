@@ -24,13 +24,31 @@
         </div>
       </div>
       <div class="home-bottom">
-        <img src="./../assets/images/icon/Frame.png" alt="" />
+        <a href="#about"
+          ><img src="./../assets/images/icon/Frame.png" alt=""
+        /></a>
         <div class="white mb1">TASTE US NOW!</div>
         <div class="home-bottom__border"></div>
       </div>
+      <div class="home-iframe">
+        <div class="home-iframe__bg"></div>
+        <video
+          src="./../assets/video/DigiSaladWebsiteVideo-v3.mp4"
+          autoplay
+          loop="loop"
+        ></video>
+      </div>
     </div>
     <div class="home-content">
-      <aboutPage/>
+      <aboutPage />
+      <div class="home-content__center--buttom">
+        <a href="https://www.youtube.com/watch?v=IeIRJ9jZ5Ro" target="_blank">
+          <div class="buttom green">
+            <div>VIEW MORE</div>
+            <div class="border"></div>
+          </div>
+        </a>
+      </div>
       <div class="home-content__rigth">
         <div class="rigth-bg">
           <div class="rigth-bg__left">
@@ -72,7 +90,7 @@
           </div>
         </div>
         <div class="home-content__center--buttom">
-          <div class="buttom">
+          <div class="buttom purple">
             <div>OUR SERVICES</div>
             <div class="border"></div>
           </div>
@@ -112,8 +130,8 @@
             </div>
             <div>
               A great digital work isn’t about designing beautiful pages purely.
-              It is about context - how do we deliver the right experience to
-              the right person at the right time. The most important thing is
+              It is about context - how do we deliver the <span style="color:yellow">right experience to
+              the right person at the right time.</span> The most important thing is
               that your work can engage customers at anytime, anywhere and let
               users experience an entire amazing digital journey.
             </div>
@@ -143,15 +161,21 @@
     </div>
     <div class="swiper">
       <swiper :options="swiperOption">
-        <swiper-slide>
+        <swiper-slide v-for="index in 4" :key="index">
           <div class="swiper-box">
             <div class="swiper-num">
-              <div class="swiper-num__now">01</div>
+              <div class="swiper-num__now">0{{ index }}</div>
               <div class="swiper-num__fan"></div>
               <div class="swiper-num__totle">04</div>
             </div>
             <div class="swiper-box__left">
               <img src="./../assets/images/swiper-img.png" alt="" />
+              <div class="swiper-box__left--buttom">
+                <div class="buttom green">
+                  <div>VIEW PROJECT</div>
+                  <div class="border"></div>
+                </div>
+              </div>
             </div>
             <div class="swiper-box__right">
               <div>HIGHLIGHTED SHOWCASE</div>
@@ -188,7 +212,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
-    aboutPage
+    aboutPage,
   },
   data() {
     return {
@@ -285,27 +309,27 @@ export default {
     text-align: center;
     font-size: 18px;
   }
-  &-button{
-    &-prev{
+  &-button {
+    &-prev {
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background-color: #26c4ce;
       left: 55px;
       cursor: pointer;
-      &::after{
+      &::after {
         font-size: 20px;
         color: #ffffff;
       }
     }
-    &-next{
+    &-next {
       width: 50px;
       height: 50px;
       border-radius: 50%;
       background-color: #26c4ce;
       right: 55px;
       cursor: pointer;
-      &::after{
+      &::after {
         font-size: 20px;
         color: #ffffff;
       }
@@ -317,7 +341,6 @@ export default {
   opacity: 1;
   pointer-events: auto;
 }
-
 
 .white {
   color: #ffffff;
@@ -344,8 +367,28 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0 0 60px 60px;
+  &-iframe {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    &__bg {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      background-color: #00000066;
+    }
+    video {
+      width: 1920px;
+      height: 1080px;
+    }
+  }
   &-top {
     &__button {
+      z-index: 2;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -374,6 +417,7 @@ export default {
     }
   }
   &-left {
+    z-index: 2;
     height: 100%;
     position: absolute;
     left: -70px;
@@ -392,6 +436,7 @@ export default {
     }
   }
   &-title {
+    z-index: 2;
     margin-left: 25rem;
     display: flex;
     flex-direction: column;
@@ -416,6 +461,7 @@ export default {
     }
   }
   &-bottom {
+    z-index: 2;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -516,15 +562,6 @@ export default {
           color: #ffffff;
         }
       }
-      .home-content__center--buttom {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-        .buttom {
-          background-color: #585880;
-        }
-      }
     }
     &__left {
       width: 100%;
@@ -577,6 +614,48 @@ export default {
         }
       }
     }
+  }
+}
+.green {
+  background-color: #26c6d0;
+}
+.purple {
+  background-color: #585880;
+}
+
+.home-content__center--buttom,
+.swiper-box__left--buttom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+  }
+  .buttom {
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 600;
+
+    .border {
+      width: 66px;
+      height: 0.1rem;
+      margin-left: 15px;
+      background-color: #ffffff;
+    }
+  }
+}
+.swiper-box__left--buttom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9;
+  margin-top: 27rem;
+  .buttom {
+    padding: 4rem;
   }
 }
 .buttom {
@@ -660,22 +739,22 @@ export default {
   }
 }
 .swiper {
-  &-num{
-    color: #FFF;
+  &-num {
+    color: #fff;
     width: 4rem;
     position: absolute;
     right: 8rem;
     top: 5rem;
-    &__now{
+    &__now {
       text-align: left;
     }
-    &__fan{
+    &__fan {
       width: 4rem;
       height: 0.1rem;
-      background: #26C6D0;
+      background: #26c6d0;
       transform: rotate(148deg);
     }
-    &__totle{
+    &__totle {
       text-align: right;
     }
   }
@@ -709,16 +788,16 @@ export default {
         }
         &:nth-child(2) {
           z-index: 9;
-            font-size: 32px;
-            height: 5rem;
-            line-height: 5rem;
+          font-size: 32px;
+          height: 5rem;
+          line-height: 5rem;
 
           &::after {
             content: "";
             display: block;
             width: 20.5rem;
             height: 0.3rem;
-            background-color: #26C6D0;
+            background-color: #26c6d0;
             position: absolute;
             margin-top: -33px;
             z-index: -1;

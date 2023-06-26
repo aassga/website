@@ -1,9 +1,9 @@
 <template>
   <div class="about">
     <div class="about-header">
-      <div><img src="./../assets/Logo-1.png" alt="" /></div>
+      <div @click="$router.push({path:'/'})"><img src="./../assets/Logo-1.png" alt="" /></div>
       <div class="about-top__button">
-        <div><el-button class="rectangle">START YOUR PROJECT</el-button></div>
+        <div><el-button class="rectangle" @click="$router.push({path:'/'})">START YOUR PROJECT</el-button></div>
         <div>
           <router-link to="/menuView"
             ><img src="./../assets/images/icon/Menu-simple-line-icons.png" alt=""
@@ -35,6 +35,9 @@ export default {
     a {
       font-size: 30px;
       color: #ffffff;
+    }
+    img{
+      cursor: pointer;
     }
   }
   &-top {
